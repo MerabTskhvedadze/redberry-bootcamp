@@ -1,7 +1,7 @@
 import React from 'react';
 import './home.scss';
 
-import { Input } from '../../components';
+import { Button, Header } from '../../components';
 
 import logo from '../../assets/images/redberry.png';
 import landingImg from '../../assets/images/shutterstock_2189773743.png';
@@ -11,10 +11,9 @@ const Home = () => {
     <>
       <img className='landingImg' src={landingImg} alt='landing img' />
       <main className='main'>
-        <header className='main__header'>
-          <img className='main__header--logo' src={logo} alt='redberry' />
-          <div className='main__header--underline' />
-        </header>
+        <Header>
+          <img className='main__logo' src={logo} alt='redberry' />
+        </Header>
         <button className='main__btn'>რეზიუმეს დამატება</button>
       </main>
     </>

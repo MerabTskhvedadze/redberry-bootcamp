@@ -1,0 +1,10 @@
+@import '../../styles/variables.scss';
+@import '../../styles/functions.scss';
+
+.header {
+  align-self: stretch;
+  margin: 0 pxToRem(70);
+  &__underline {
+    border-bottom: pxToRem(1) solid $--black--1;
+  }
+}
