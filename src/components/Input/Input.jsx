@@ -1,9 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './Input.scss';
 
-const Input = () => {
-  return <div>Input</div>;
+import validIcon from '../../assets/icons/succes.svg';
+import invalidIcon from '../../assets/icons/error.svg';
+
+const Input = ({ label, mode = 'long', onChange, value, validRules }) => {
+  const [isValid, setValid] = useState(false);
+
+  const handleValidation = (e) => {
+    const inputValue = e.target.value;
+    setValid(inputValue !== '');
+  };
+
+  return (
+    <>
+      <label className='label'>{label}</label>
+      <div className='input'>
+        <input
+          className={`input__area ${mode === 'short' ? 'short' : 'long'}`}
+          type='text'
+          value={value}
+          onChange={onChange}
+          onBlur={handleValidation}
+        />
+        {true && <img className='input__icon' src={validIcon} />}
+      </div>
+      <p>{validRules}</p>
+      {true && <img className='errorIcon' src={invalidIcon} />}
+    </>
+  );
 };
 
 export default Input;

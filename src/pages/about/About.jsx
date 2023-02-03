@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import { Input } from '../../components';
 
 const About = () => {
+  const [username, setUsername] = useState('');
+
   return (
     <div>
-      <h1></h1>
-      <h1></h1>
+      <Input
+        label='თანამდებობა'
+        mode='short'
+        onChange={(e) => setUsername(e.target.value)}
+        value={username}
+        validRules='მინიმუმ 2 სიმბოლო'
+      />
     </div>
   );
 };
