@@ -14,7 +14,7 @@ const Home = () => {
         <Header>
           <img className='main__logo' src={logo} alt='redberry' />
         </Header>
-        <button className='main__btn'>რეზიუმეს დამატება</button>
+        <Button className='main__btn'>ᲠᲔᲖᲘᲣᲛᲔᲡ ᲓᲐᲛᲐᲢᲔᲑᲐ</Button>
       </main>
     </>
   );

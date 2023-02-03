@@ -1,4 +1,5 @@
 @import './fonts.scss';
+@import './functions.scss';
 
 $--white--1: #ffffff;
 
@@ -19,4 +20,17 @@ $--blue--2: #62a1eb;
 
 $--pink: #6b40e3;
 
-$--helvetica: 'helvetica';
+$--helvetica: 'Helvetica';
+$--small: 300;
+$--medium: 400;
+$--large: 500;
+
+$--size-14: pxToRem(14);
+$--size-16: pxToRem(16);
+$--size-18: pxToRem(18);
+$--size-20: pxToRem(20);
+$--size-24: pxToRem(24);
+$--size-34: pxToRem(34);
+
+$--radius-4: pxToRem(4);
+$--radius-8: pxToRem(8);

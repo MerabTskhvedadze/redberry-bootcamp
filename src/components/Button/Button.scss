@@ -3,12 +3,11 @@
 .btn {
   all: unset;
   font-family: 'Helvetica Neue';
-  font-style: normal;
   font-weight: 500;
-  font-size: pxToRem(16);
+  font-size: $--size-20;
 
   background: $--pink;
-  border-radius: pxToRem(4);
+  border-radius: $--radius-4;
   padding: pxToRem(14) pxToRem(35);
   color: $--white--1;
 }

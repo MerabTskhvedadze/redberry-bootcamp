@@ -5,7 +5,7 @@ import './Input.scss';
 import validIcon from '../../assets/icons/succes.svg';
 import invalidIcon from '../../assets/icons/error.svg';
 
-const Input = ({ label, mode = 'long', onChange, value, validRules }) => {
+const Input = ({ label, mode = 'long', onChange, value, validRules: hint }) => {
   const [isValid, setValid] = useState(false);
 
   const handleValidation = (e) => {
@@ -26,7 +26,7 @@ const Input = ({ label, mode = 'long', onChange, value, validRules }) => {
         />
         {true && <img className='input__icon' src={validIcon} />}
       </div>
-      <p>{validRules}</p>
+      <p>{hint}</p>
       {true && <img className='errorIcon' src={invalidIcon} />}
     </>
   );
