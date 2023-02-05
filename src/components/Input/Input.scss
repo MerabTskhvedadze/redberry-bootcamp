@@ -1,1 +1,70 @@
 @import '../../styles/global.scss';
+
+.input {
+  &__label {
+    font-family: 'helvetica';
+    font-weight: $--large;
+    font-size: $--size-16;
+    margin-bottom: 8px;
+    color: $--black--2;
+
+    &--error {
+      color: $--red--3;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    height: 48px;
+
+    border: 1px solid $--grey--1;
+    border-radius: $--radius-4;
+
+    &--success {
+      border-color: $--green;
+    }
+    &--error {
+      border-color: $--red--3;
+    }
+
+    &:focus-within {
+      border-width: 2px;
+    }
+
+    &--input {
+      all: unset;
+      height: 100%;
+      width: 100%;
+      padding: 13px 16px;
+    }
+
+    &--success {
+      margin-right: 14px;
+    }
+
+    &--error {
+      padding-left: 10px;
+    }
+  }
+
+  &__hint {
+    font-family: 'helvetica';
+    font-weight: $--small;
+    font-size: $--size-14;
+    margin-top: 8px;
+  }
+}
+
+.short {
+  width: 371px;
+}
+.long {
+  width: 798px;
+}

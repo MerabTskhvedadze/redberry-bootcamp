@@ -12,7 +12,15 @@ const About = () => {
         mode='short'
         onChange={(e) => setUsername(e.target.value)}
         value={username}
-        validRules='მინიმუმ 2 სიმბოლო'
+        hint='მინიმუმ 2 სიმბოლო'
+        placeholder={'name'}
+      />
+      <Input
+        label='თანამდებობა'
+        onChange={(e) => setUsername(e.target.value)}
+        value={username}
+        hint='მინიმუმ 2 სიმბოლო'
+        placeholder={'name'}
       />
     </div>
   );
